@@ -1,0 +1,81 @@
+Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 29/02/2020 21:51:26.
+Project "C:\bin\dev\cmake-check-md-mt-flags\build\ALL_BUILD.vcxproj" on node 1 (default targets).
+Project "C:\bin\dev\cmake-check-md-mt-flags\build\ALL_BUILD.vcxproj" (1) is building "C:\bin\dev\cmake-check-md-mt-flags\build\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "x64\Debug\ZERO_CHECK\".
+  Creating directory "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\".
+InitializeBuildStatus:
+  Creating "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Checking Build System
+FinalizeBuildStatus:
+  Deleting file "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+  Touching "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
+Done Building Project "C:\bin\dev\cmake-check-md-mt-flags\build\ZERO_CHECK.vcxproj" (default targets).
+Project "C:\bin\dev\cmake-check-md-mt-flags\build\ALL_BUILD.vcxproj" (1) is building "C:\bin\dev\cmake-check-md-mt-flags\build\exec-1.vcxproj" (3) on node 1 (default targets).
+Project "C:\bin\dev\cmake-check-md-mt-flags\build\exec-1.vcxproj" (3) is building "C:\bin\dev\cmake-check-md-mt-flags\build\module-1.vcxproj" (4) on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "module-1.dir\Debug\".
+  Creating directory "C:\bin\dev\cmake-check-md-mt-flags\build\Debug\".
+  Creating directory "module-1.dir\Debug\module-1.tlog\".
+InitializeBuildStatus:
+  Creating "module-1.dir\Debug\module-1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/bin/dev/cmake-check-md-mt-flags/CMakeLists.txt
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "C:\bin\programs\vcpkg\installed\x64-windows\"
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\CL.exe /c /I"C:\bin\programs\vcpkg\installed\x64-windows\include" /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"module-1.dir\Debug\\" /Fd"module-1.dir\Debug\module-1.pdb" /Gd /TP /errorReport:queue "C:\bin\dev\cmake-check-md-mt-flags\module.cpp"
+  module.cpp
+Lib:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\Lib.exe /OUT:"C:\bin\dev\cmake-check-md-mt-flags\build\Debug\module-1.lib" /NOLOGO /MACHINE:X64  /machine:x64 "module-1.dir\Debug\module.obj"
+  module-1.vcxproj -> C:\bin\dev\cmake-check-md-mt-flags\build\Debug\module-1.lib
+AppLocalFromInstalled:
+  C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -noprofile -File "C:\bin\programs\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\bin\dev\cmake-check-md-mt-flags\build\Debug\module-1.lib" "C:\bin\programs\vcpkg\installed\x64-windows\debug\bin" "module-1.dir\Debug\module-1.tlog\module-1.write.1u.tlog" "module-1.dir\Debug\vcpkg.applocal.log"
+CopyFilesToOutputDirectory:
+  Copying file from "C:\bin\dev\cmake-check-md-mt-flags\build\module-1.dir\Debug\module-1.pdb" to "C:\bin\dev\cmake-check-md-mt-flags\build\Debug\module-1.pdb".
+FinalizeBuildStatus:
+  Deleting file "module-1.dir\Debug\module-1.tlog\unsuccessfulbuild".
+  Touching "module-1.dir\Debug\module-1.tlog\module-1.lastbuildstate".
+Done Building Project "C:\bin\dev\cmake-check-md-mt-flags\build\module-1.vcxproj" (default targets).
+PrepareForBuild:
+  Creating directory "exec-1.dir\Debug\".
+  Creating directory "exec-1.dir\Debug\exec-1.tlog\".
+InitializeBuildStatus:
+  Creating "exec-1.dir\Debug\exec-1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/bin/dev/cmake-check-md-mt-flags/CMakeLists.txt
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "C:\bin\programs\vcpkg\installed\x64-windows\"
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\CL.exe /c /I"C:\bin\programs\vcpkg\installed\x64-windows\include" /Zi /nologo /W1 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"exec-1.dir\Debug\\" /Fd"exec-1.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue "C:\bin\dev\cmake-check-md-mt-flags\main.cpp"
+  main.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\bin\dev\cmake-check-md-mt-flags\build\Debug\exec-1.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\bin\programs\vcpkg\installed\x64-windows\debug\lib" /LIBPATH:"C:\bin\programs\vcpkg\installed\x64-windows\debug\lib\manual-link" "Debug\module-1.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\bin\programs\vcpkg\installed\x64-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/bin/dev/cmake-check-md-mt-flags/build/Debug/exec-1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/bin/dev/cmake-check-md-mt-flags/build/Debug/exec-1.lib" /MACHINE:X64  /machine:x64 "exec-1.dir\Debug\main.obj"
+  exec-1.vcxproj -> C:\bin\dev\cmake-check-md-mt-flags\build\Debug\exec-1.exe
+AppLocalFromInstalled:
+  C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -noprofile -File "C:\bin\programs\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\bin\dev\cmake-check-md-mt-flags\build\Debug\exec-1.exe" "C:\bin\programs\vcpkg\installed\x64-windows\debug\bin" "exec-1.dir\Debug\exec-1.tlog\exec-1.write.1u.tlog" "exec-1.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  Deleting file "exec-1.dir\Debug\exec-1.tlog\unsuccessfulbuild".
+  Touching "exec-1.dir\Debug\exec-1.tlog\exec-1.lastbuildstate".
+Done Building Project "C:\bin\dev\cmake-check-md-mt-flags\build\exec-1.vcxproj" (default targets).
+PrepareForBuild:
+  Creating directory "x64\Debug\ALL_BUILD\".
+  Creating directory "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\".
+InitializeBuildStatus:
+  Creating "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+CustomBuild:
+  Building Custom Rule C:/bin/dev/cmake-check-md-mt-flags/CMakeLists.txt
+FinalizeBuildStatus:
+  Deleting file "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild".
+  Touching "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate".
+Done Building Project "C:\bin\dev\cmake-check-md-mt-flags\build\ALL_BUILD.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.57
