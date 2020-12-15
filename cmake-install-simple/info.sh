@@ -12,11 +12,13 @@
 
 ###############################################################################################
 # build and install module 1
-rmdir C:\bin\dev\cmake-install-simple\temp-install /S /Q
-mkdir C:\bin\dev\cmake-install-simple\temp-install
-cd C:\bin\dev\cmake-install-simple\module-1-install
+
+## rmdir C:\bin\dev\cmake-install-simple\temp-install /S /Q
+## mkdir C:\bin\dev\cmake-install
+
+cd module-1-install
 rmdir build /S /Q
-cmake -B build -DCMAKE_INSTALL_PREFIX=C:\bin\dev\cmake-install-simple\temp-install
+cmake -B build -DCMAKE_INSTALL_PREFIX=C:/bin/dev/cmake-install
 cmake --build build
 cmake --build build --config Release
 cmake --build build --target install
@@ -25,9 +27,10 @@ cmake --build build --config Release --target install
 
 ###############################################################################################
 # use module 1 (no vcpkg)
-cd C:\bin\dev\cmake-install-simple\exe-uses-module-1
+cd ..
+cd exe-uses-module-1
 rmdir build /S /Q
-cmake -B build -DCMAKE_PREFIX_PATH=C:/bin/dev/cmake-install-simple/temp-install
+cmake -B build -DCMAKE_PREFIX_PATH=C:/bin/dev/cmake-install
 cmake --build build
 cmake --build build --config Release
 
