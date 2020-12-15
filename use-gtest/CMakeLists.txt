@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.15)
+project(sample CXX)
+enable_testing()
+find_package(GTest REQUIRED)
+add_executable(test1 test.cpp source.cpp)
+target_link_libraries(test1 GTest::GTest GTest::Main)
+add_test(test-1 test1)
